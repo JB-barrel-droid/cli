@@ -2,6 +2,9 @@
 
 ## Run Log
 
+- 2026-03-09T23:01:18Z: Created dedicated branch `codex/itinerary-supervisor-20260309-d` from prior itinerary supervisor tip (`227ebabbd1b30216f0ebc169b216dc45e2a91398`) to preserve revertability for this run.
+- 2026-03-09T23:01:18Z: Revalidated blocker in this worktree: no Personal Date Tracker Apps Script source files exist (`*.gs` and `appsscript.json` both absent), so implementation remains blocked.
+- 2026-03-09T23:01:18Z: Kept exactly three active workstreams assigned to schema/setup migration hardening, brief/calendar-sync behavior hardening, and validation/docs/rollback safety while blocked.
 - 2026-03-09: Restored `spec.md`, `plan.md`, and `learnings.md` into this worktree from `/Users/botcomp/Projects/Google CLI` because these itinerary artifacts were missing from the current checkout.
 - 2026-03-09: Revalidated blocker: no Apps Script source files (`*.gs`) and no `appsscript.json` exist in this repository snapshot, so implementation work remains blocked in this run.
 - 2026-03-09: Maintained exactly three active parallel workstreams by reassigning schema/setup, brief/calendar sync, and validation/docs/rollback into implementation-readiness tracks while blocked.

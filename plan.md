@@ -1,6 +1,6 @@
 # Itinerary Tab Implementation Plan
 
-## Active Workstreams (2026-03-09 run)
+## Active Workstreams (2026-03-09T23:01:18Z run)
 
 1. Schema/setup and migrations (active): Keep the tab schema and setup migration plan implementation-ready by maintaining the locked 22-column contract and setup/upgrade touchpoint checklist while Apps Script sources are unavailable in this worktree.
 2. Brief and calendar sync behavior (active): Keep the brief and calendar-sync behavior contract implementation-ready by preserving the reconciliation/default rules and explicit Jeremy/Lindsay routing requirements for immediate coding once script files are present.
@@ -10,6 +10,13 @@
 
 - Status: blocked on implementation because no Personal Date Tracker Apps Script files (`*.gs`, `appsscript.json`) are present in this repository snapshot.
 - Reassignment to keep three active streams: all three streams are running as specification hardening and verification streams so coding can begin immediately when the script source becomes available.
+- Dedicated branch: `codex/itinerary-supervisor-20260309-d`.
+- Latest safe rollback point for this run: `227ebabbd1b30216f0ebc169b216dc45e2a91398`.
+
+## Run Verification (2026-03-09T23:01:18Z)
+
+- Re-checked repository for implementation targets: `find . -type f \( -name '*.gs' -o -name 'appsscript.json' \)` returned no files.
+- Confirmed branch safety baseline with `git rev-parse HEAD` before edits.
 
 ## Phase 1: Design Lock
 

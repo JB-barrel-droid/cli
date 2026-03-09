@@ -1,24 +1,29 @@
 # Itinerary Tab Implementation Plan
 
-## Active Workstreams (Run: 2026-03-09)
+## Active Workstreams (Run: 2026-03-09T18:01:29Z)
 
 1. **Schema/Setup + Migrations (Active)**
    - Keep `Itinerary` schema constants and setup/upgrade path design locked.
    - Define concrete migration checkpoints for adding the new tab safely to existing sheets.
-   - Prepare implementation-ready change order once Apps Script source files are available in this workspace.
+   - Keep an implementation-ready patch order for `ITINERARY_COLS`, `ensureItineraryTab(ss)`, setup wiring, and upgrade safety once Apps Script source files are available.
 2. **Brief + Calendar Sync Behavior (Active)**
    - Keep traveler relevance, brief filtering/grouping, and Jeremy/Lindsay routing rules aligned with the spec.
    - Keep calendar bidirectional reconciliation behavior explicit (including shared-row dual sync and last-modified-wins).
-   - Track unresolved implementation deltas against the missing script code surface.
+   - Maintain the traveler routing and shared-event conflict policy as a drop-in design for the existing bidirectional calendar logic.
 3. **Validation/Tests/Docs + Rollback Safety (Active)**
    - Keep validation and safety rules explicit for all itinerary-required fields and sync controls.
    - Keep run-by-run rollback safety with dedicated `codex/` branch and checkpoint commits.
-   - Maintain `spec.md`, `plan.md`, and `learnings.md` consistency and remove stale contradictions quickly.
+   - Maintain `spec.md`, `plan.md`, and `learnings.md` consistency, plus an implementation-readiness checklist and test matrix for fast execution after unblock.
 
 ## Current Blocker (2026-03-09)
 
 - The Apps Script implementation files for the Personal Date Tracker project are not present in this repository/worktree (`*.gs`, `appsscript.json`), so code changes for itinerary setup/sync cannot be applied yet.
+- The same Apps Script source files are also not present in `/Users/botcomp/Projects/Google CLI`, so this run cannot import code from the sibling checkout either.
 - Until those files are available, progress is limited to keeping the feature contract, sequencing, and safety plan implementation-ready.
+
+## Implementation-Ready Artifacts
+
+- [`docs/itinerary-implementation-readiness.md`](docs/itinerary-implementation-readiness.md) tracks the exact execute-on-unblock checklist, test gates, and rollback checkpoints.
 
 ## Phase 1: Design Lock
 

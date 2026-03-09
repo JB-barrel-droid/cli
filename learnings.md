@@ -2,6 +2,9 @@
 
 ## Run Log
 
+- 2026-03-09: Created dedicated branch `codex/itinerary-supervisor-20260309-b` from checkpoint `ced6790` to continue this automation run with safe rollback.
+- 2026-03-09: Revalidated blocker in both this worktree and `/Users/botcomp/Projects/Google CLI`: no Personal Date Tracker Apps Script source files (`*.gs`, `appsscript.json`) are available for itinerary implementation.
+- 2026-03-09: Added `docs/itinerary-implementation-readiness.md` to keep exactly three active workstreams execution-ready with explicit task order, verification gates, and rollback checkpoints.
 - 2026-03-09: Synced `spec.md`, `plan.md`, and `learnings.md` into this codex worktree branch to keep feature context local and versioned.
 - 2026-03-09: Reconfirmed blocker that Personal Date Tracker Apps Script implementation files (`*.gs`, `appsscript.json`) are not present in this repository/worktree, so itinerary code implementation cannot proceed yet.
 - 2026-03-09: Kept three active workstreams in `plan.md` (schema/setup+migrations, brief+calendar sync behavior, validation/tests/docs+rollback safety) and reassigned near-term tasks to keep implementation readiness moving.
@@ -32,7 +35,7 @@ The workbook already uses dedicated tabs for distinct operational domains, which
 - The system already uses Google Calendar, Gmail, Google Tasks, and a web app deployment.
 - The current calendar sync implementation is real and bidirectional, but it is centered on one configured calendar target rather than explicit per-person calendar ownership.
 - The script references task-related behavior and enables the Google Tasks advanced service, but task sync does not appear clearly implemented at the same maturity level as calendar sync.
-- Google Tasks is organized around per-user task lists. It does not present a true multi-owner task model for this use case, so co-owned tasks should be implemented as mirrored task copies linked by the sheet.
+- Google Tasks is organized around per-user task lists. It does not present a true multi-owner task model for this use case, so a single-accountable-owner task model is the safer v1 default.
 
 ## Product Implications
 

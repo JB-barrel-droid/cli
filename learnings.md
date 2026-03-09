@@ -96,15 +96,14 @@ The workbook already uses dedicated tabs for distinct operational domains, which
 
 - None for v1 scope at this time.
 
-- Whether hotel stays should be represented as one multi-day row or separate check-in / check-out rows.
-- How Jeremy and Lindsay should map to calendars and tasks lists in settings.
-- Whether trip-level metadata deserves a second tab later.
+## Run Log: 2026-03-09T11:01:04Z
 
-## Run Log: 2026-03-09T10:01:15Z
-
-- Created dedicated branch `codex/itinerary-supervisor-20260309-8d55` in this worktree to preserve revertability.
-- Confirmed planning artifacts are available in this worktree (`spec.md`, `plan.md`, `learnings.md`) after sync from sibling checkout.
-- Reconfirmed blocker: no Personal Date Tracker Apps Script sources are available in accessible paths (`.gs` and `appsscript.json` absent), so implementation tasks cannot be applied to code yet.
+- Created dedicated branch `codex/itinerary-supervisor-20260309-a` in this worktree to preserve revertability.
+- Verified planning artifacts are present in this worktree (`spec.md`, `plan.md`, `learnings.md`) and aligned with current acceptance scope.
+- Revalidated source availability blocker by searching for implementation files:
+  - `rg --files -g '*.gs' -g 'appsscript.json'`
+  - `find /Users/botcomp/.codex/worktrees/6556/Google\\ CLI /Users/botcomp/Projects/Google\\ CLI -type f \\( -name '*.gs' -o -name 'appsscript.json' \\)`
+  - `find /Users/botcomp/.codex -maxdepth 5 -type f \\( -name '*.gs' -o -name 'appsscript.json' \\)`
 - Maintained exactly three active workstreams by assigning highest-value ready tasks:
   - schema/setup + migration prep
   - brief/calendar sync behavior lock + acceptance mapping

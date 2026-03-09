@@ -110,21 +110,21 @@ This keeps the first release concrete while validating the highest-value itinera
 ## Active Workstreams (2026-03-09 Run)
 
 1. Schema/setup + migrations
-- Owner: supervisor run in `codex/itinerary-supervisor-20260309-8d55`
+- Owner: supervisor run in `codex/itinerary-supervisor-20260309-a`
 - Current task: keep schema specification and migration checkpoints ready while waiting for the actual Apps Script source tree.
 - Next concrete step when unblocked: implement `ITINERARY_COLS`, `ensureItineraryTab(ss)`, and setup/upgrade wiring in script source.
 
 2. Brief + calendar sync behavior
-- Owner: supervisor run in `codex/itinerary-supervisor-20260309-8d55`
+- Owner: supervisor run in `codex/itinerary-supervisor-20260309-a`
 - Current task: keep brief and calendar sync requirements locked and traceable to acceptance criteria.
 - Next concrete step when unblocked: add itinerary row brief grouping and Jeremy/Lindsay calendar routing with dual-sync support for shared rows.
 
 3. Validation/tests/docs + rollback safety
-- Owner: supervisor run in `codex/itinerary-supervisor-20260309-8d55`
+- Owner: supervisor run in `codex/itinerary-supervisor-20260309-a`
 - Current task: persist run-by-run blocker and rollback metadata; keep docs synchronized across worktrees.
 - Next concrete step when unblocked: add validation/test coverage for status/sync rules and run script-level verification.
 
-## Current Blocker (2026-03-09T10:01:15Z)
+## Current Blocker (2026-03-09T11:01:04Z)
 
-- Repository still does not include the Personal Date Tracker Apps Script implementation files needed for coding (`.gs` and `appsscript.json` not present in this worktree or sibling checkout).
+- Repository still does not include the Personal Date Tracker Apps Script implementation files needed for coding (`.gs` and `appsscript.json` not present in this worktree, sibling checkout, or writable Codex directories).
 - Workstreams remain active with highest-value preparatory tasks, but feature code changes cannot proceed until source is available.

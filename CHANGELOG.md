@@ -1,5 +1,14 @@
 # @googleworkspace/cli
 
+## 0.9.2
+
+### Patch Changes
+
+- 06aa698: fix(auth): dynamically fetch scopes from Discovery docs when `-s` specifies services not in static scope lists
+- 06aa698: fix(auth): format extract_scopes_from_doc and deduplicate dynamic scopes
+- 5e7d120: Bring `+forward` behavior in line with Gmail's web UI: keep the forward in the sender's original thread, add a blank line between the forwarded message metadata and body, and remove the spurious closing delimiter.
+- 2782cf1: Fix gmail +triage 403 error by using gmail.readonly scope instead of gmail.modify to avoid conflict with gmail.metadata scope that does not support the q parameter
+
 ## 0.9.1
 
 ### Patch Changes

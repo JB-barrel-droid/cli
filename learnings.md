@@ -1,5 +1,18 @@
 # Current Learnings
 
+## Run Log
+
+### 2026-03-09 (Supervisor run)
+
+- Restored missing itinerary planning artifacts (`spec.md`, `plan.md`, `learnings.md`) into this worktree from `/Users/botcomp/Projects/Google CLI`.
+- Re-established a dedicated supervisor branch: `codex/itinerary-supervisor-20260309-3`.
+- Confirmed implementation blocker persists: repository contains no Apps Script source (`*.gs`, `appsscript.json`) to apply itinerary feature code changes.
+- Kept exactly three active workstreams by reassigning effort to:
+  - schema/setup+migration implementation checklist,
+  - brief+calendar sync behavior contract finalization,
+  - validation/tests/docs+rollback safety tracking.
+- Added an implementation-ready verification matrix to `plan.md` so coding can begin immediately once source files are available.
+
 ## Confirmed System Context
 
 - The spreadsheet `Personal Date Tracker` is readable and active.

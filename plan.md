@@ -1,5 +1,25 @@
 # Itinerary Tab Implementation Plan
 
+## Active Workstreams (Run 2026-03-09)
+
+1. **Schema, setup, and migrations**
+   - Status: Active
+   - Focus: Lock v1 `Itinerary` sheet schema, setup/upgrade touchpoints, and Settings key additions.
+   - Current assignment: Complete implementation-ready migration checklist for `ensureItineraryTab(ss)` and `setup`/upgrade wiring.
+2. **Brief and calendar sync behavior**
+   - Status: Active
+   - Focus: Traveler-aware brief inclusion and itinerary calendar routing/reconciliation for Jeremy and Lindsay.
+   - Current assignment: Finalize sync behavior contract (defaults, dual-calendar behavior, draft/cancelled/completed handling, last-modified-wins).
+3. **Validation, tests, docs, and rollback safety**
+   - Status: Active
+   - Focus: Verification coverage map, blocker logging, and rollback checkpoint discipline.
+   - Current assignment: Maintain run log in `learnings.md`, track blocker state, and keep safe rollback commit after each validated milestone.
+
+### Blocker Handling
+
+- Repository-level blocker: this workspace currently contains no bound Apps Script source files (`*.gs`, `appsscript.json`) required for direct implementation.
+- Reassignment policy while blocked: keep the three workstreams active by advancing implementation contracts, migration/test plans, and validation documentation until source files are available.
+
 ## Phase 1: Design Lock
 
 - Confirm the final `Itinerary` column set.
@@ -111,3 +131,19 @@ This keeps the first release concrete while validating the highest-value itinera
 - Event and task rows reconcile in both directions with Google.
 - Briefs can include itinerary details for the right traveler.
 - Existing reminders, dates, orders, and calendar sync still function.
+
+## Implementation-Ready Verification Matrix
+
+1. Schema/setup stream exit checks
+   - `ITINERARY_COLS` constant uses the exact 22-column order from `spec.md`.
+   - `ensureItineraryTab(ss)` exists and is invoked from both setup and upgrade paths.
+   - Settings includes: `Jeremy Calendar ID`, `Lindsay Calendar ID`, `Jeremy Task List ID`, `Lindsay Task List ID`.
+2. Brief/calendar stream exit checks
+   - Brief logic filters by traveler relevance, `Brief Include`, and status defaults.
+   - Itinerary rows only sync when `Sync Target = Calendar` and status is non-draft/non-cancelled.
+   - Shared Jeremy+Lindsay rows sync to both calendars; single-person rows sync to one.
+   - Divergence reconciliation is last-modified-wins.
+3. Validation/tests/docs stream exit checks
+   - Happy-path and rejection-path tests are present for schema parsing, routing, and sync gating.
+   - Empty `Itinerary` tab and partial-row scenarios do not break existing brief/sync flows.
+   - A documented rollback commit exists for each milestone.

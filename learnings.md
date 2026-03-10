@@ -121,3 +121,6 @@ The workbook already uses dedicated tabs for distinct operational domains, which
 - 2026-03-10: Restored itinerary control artifacts (`spec.md`, `plan.md`, `learnings.md`, and `docs/itinerary-*`) from `codex/itinerary-supervisor-20260310-e` because this worktree snapshot did not include them.
 - 2026-03-10: Revalidated blocker in `/Users/botcomp/.codex/worktrees/470d/Google CLI`, `/Users/botcomp/.codex/worktrees/5e89/Google CLI`, and `/Users/botcomp/Projects/Google CLI`; all still contain no `*.gs` or `appsscript.json`, so implementation remains source-blocked.
 - 2026-03-10: Reconfirmed runtime tooling blocker: `cargo` is unavailable in this environment (`command not found`), so Rust lint/test commands cannot run here.
+- 2026-03-10: Created dedicated branch `codex/itinerary-supervisor-20260310-g` from detached `HEAD` in this workspace and cherry-picked restore checkpoint `fccff80` as local rollback-safe commit `7b0ab0f`.
+- 2026-03-10: Revalidated blocker in `/Users/botcomp/.codex/worktrees/9fe4/Google CLI`, `/Users/botcomp/.codex/worktrees/5e89/Google CLI`, and `/Users/botcomp/Projects/Google CLI`; all still contain no `*.gs` or `appsscript.json`, so implementation remains source-blocked.
+- 2026-03-10: Reconfirmed runtime tooling blocker: `cargo` is unavailable in this environment (`command not found`), so Rust lint/test commands remain blocked.

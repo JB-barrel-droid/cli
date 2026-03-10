@@ -114,3 +114,6 @@ The workbook already uses dedicated tabs for distinct operational domains, which
 - 2026-03-10: Created and switched to dedicated branch `codex/itinerary-supervisor-20260310-d` from checkpoint commit `46d1292` to preserve rollback-safe implementation continuity in this worktree.
 - 2026-03-10: Revalidated blocker in `/Users/botcomp/.codex/worktrees/5e89/Google CLI` and `/Users/botcomp/Projects/Google CLI`: no Personal Date Tracker Apps Script source files (`*.gs`, `appsscript.json`) are present in either location.
 - 2026-03-10: Refreshed stream-control docs (`plan.md`, `docs/itinerary-implementation-readiness.md`, `docs/itinerary-workstream-matrices.md`) to keep exactly three active workstreams implementation-ready under the current blocked constraints.
+- 2026-03-10: Created and switched to dedicated branch `codex/itinerary-supervisor-20260310-e` from checkpoint `0fe9620` to continue without detached-HEAD risk.
+- 2026-03-10: Revalidated blocker again in `/Users/botcomp/.codex/worktrees/5e89/Google CLI` and `/Users/botcomp/Projects/Google CLI`; both still contain no `*.gs` or `appsscript.json`, so implementation remains source-blocked.
+- 2026-03-10: Refreshed `plan.md`, `docs/itinerary-implementation-readiness.md`, `docs/itinerary-workstream-matrices.md`, and `docs/itinerary-unblock-handoff.md` timestamps and branch context for this run.

@@ -16,7 +16,7 @@
    - Maintain verification matrix and rollback checkpoints while source is blocked.
    - Preserve branch hygiene and checkpoint commits with clear rollback hashes each run.
    - Keep blocked-workspace verification commands and expected outcomes current.
-   - Re-verify source blocker state every run in both active worktree and `/Users/botcomp/Projects/Google CLI`.
+   - Re-verify source blocker state every run in both `/Users/botcomp/.codex/worktrees/5e89/Google CLI` and `/Users/botcomp/Projects/Google CLI`.
 
 ## Phase 1: Design Lock
 

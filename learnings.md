@@ -111,3 +111,6 @@ The workbook already uses dedicated tabs for distinct operational domains, which
 - 2026-03-10: Verified environment constraint: `cargo` is unavailable in this runtime, so Rust test execution cannot run here.
 - 2026-03-10: Reconfirmed blocker in the active worktree `/Users/botcomp/.codex/worktrees/d3ea/Google CLI` and corrected stale blocker-path documentation in `docs/itinerary-implementation-readiness.md`.
 - 2026-03-10: Added `docs/itinerary-unblock-handoff.md` with an exact first-unblocked execution sequence across the three streams to minimize time-to-implementation once Apps Script source files are added.
+- 2026-03-10: Created and switched to dedicated branch `codex/itinerary-supervisor-20260310-d` from checkpoint commit `46d1292` to preserve rollback-safe implementation continuity in this worktree.
+- 2026-03-10: Revalidated blocker in `/Users/botcomp/.codex/worktrees/5e89/Google CLI` and `/Users/botcomp/Projects/Google CLI`: no Personal Date Tracker Apps Script source files (`*.gs`, `appsscript.json`) are present in either location.
+- 2026-03-10: Refreshed stream-control docs (`plan.md`, `docs/itinerary-implementation-readiness.md`, `docs/itinerary-workstream-matrices.md`) to keep exactly three active workstreams implementation-ready under the current blocked constraints.

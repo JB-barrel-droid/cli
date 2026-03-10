@@ -130,3 +130,8 @@ The workbook already uses dedicated tabs for distinct operational domains, which
 - 2026-03-10: Revalidated blocker in `/Users/botcomp/.codex/worktrees/1c4d/Google CLI`, `/Users/botcomp/.codex/worktrees/5e89/Google CLI`, and `/Users/botcomp/Projects/Google CLI`; no `*.gs` or `appsscript.json` were found in any location.
 - 2026-03-10: Refreshed stream-control docs (`plan.md`, `docs/itinerary-implementation-readiness.md`, `docs/itinerary-workstream-matrices.md`, `docs/itinerary-unblock-handoff.md`) with current branch and blocker-path context while keeping exactly three active workstreams.
 - 2026-03-10: Reconfirmed runtime tooling blocker: `cargo` remains unavailable (`command not found`), so Rust lint/test commands cannot be executed in this environment.
+- 2026-03-10: Created dedicated branch `codex/itinerary-supervisor-20260310-12c6` from detached `HEAD` (`5e7d120`) for this workspace run to preserve revertability.
+- 2026-03-10: Restored itinerary supervision baseline artifacts by cherry-picking checkpoint `b007451` as local rollback commit `6c82463`.
+- 2026-03-10: Revalidated blocker in `/Users/botcomp/.codex/worktrees/12c6/Google CLI`, `/Users/botcomp/.codex/worktrees/0788/Google CLI`, `/Users/botcomp/.codex/worktrees/5e89/Google CLI`, and `/Users/botcomp/Projects/Google CLI`; no `*.gs` or `appsscript.json` were found in any location.
+- 2026-03-10: Refreshed stream-control docs (`plan.md`, `docs/itinerary-implementation-readiness.md`, `docs/itinerary-workstream-matrices.md`, `docs/itinerary-unblock-handoff.md`) for this branch context while maintaining exactly three active workstreams.
+- 2026-03-10: Reconfirmed runtime tooling blocker: `cargo` is unavailable (`command not found`) in this runtime, so Rust lint/test commands remain blocked.

@@ -106,3 +106,6 @@ The workbook already uses dedicated tabs for distinct operational domains, which
 - 2026-03-09: Re-synced `spec.md`, `plan.md`, and `learnings.md` into this worktree branch after they were absent from the repository snapshot in this workspace.
 - 2026-03-09: Reconfirmed blocker that no Personal Date Tracker Apps Script source files (`*.gs`, `appsscript.json`) are present in this worktree, which still prevents direct implementation edits.
 - 2026-03-09: Kept exactly three active workstreams by assigning source-unblocked implementation sequencing to stream 1, sync/brief behavior rules to stream 2, and verification + rollback protection to stream 3.
+- 2026-03-10: Added `docs/itinerary-workstream-matrices.md` with concrete migration, sync-policy, and test acceptance matrices to keep three parallel workstreams implementation-ready while source remains blocked.
+- 2026-03-10: Reconfirmed blocker persists in this workspace: no Personal Date Tracker Apps Script source files (`*.gs`, `appsscript.json`) are present.
+- 2026-03-10: Verified environment constraint: `cargo` is unavailable in this runtime, so Rust test execution cannot run here.

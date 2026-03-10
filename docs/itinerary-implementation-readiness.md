@@ -1,8 +1,10 @@
 # Itinerary Implementation Readiness
 
-Last updated: 2026-03-09T20:09:00Z
+Last updated: 2026-03-10T01:01:27Z
 
 This document keeps the itinerary feature implementation-ready while Apps Script source files are unavailable in this workspace.
+
+Detailed stream acceptance matrices live in `docs/itinerary-workstream-matrices.md`.
 
 ## Active Workstreams (Exactly Three)
 

@@ -1,16 +1,19 @@
 # Itinerary Tab Implementation Plan
 
-## Active Workstreams (2026-03-09 Run)
+## Active Workstreams (2026-03-10 Run)
 
 1. Schema/setup and migrations
    - Keep the v1 22-column schema locked in `spec.md`.
    - Keep migration sequence explicit so setup/upgrade edits can be applied in one pass once source is present.
+   - Maintain step-by-step migration acceptance checks in `docs/itinerary-workstream-matrices.md`.
 2. Brief and calendar sync behavior
    - Keep traveler relevance and dual-calendar routing rules implementation-ready.
    - Keep status-driven sync policy (`Draft`, `Cancelled`, `Completed`) explicitly ordered for reconciliation.
+   - Maintain sync-routing and policy decision table in `docs/itinerary-workstream-matrices.md`.
 3. Validation, tests, docs, and rollback safety
    - Maintain verification matrix and rollback checkpoints while source is blocked.
    - Preserve branch hygiene and checkpoint commits with clear rollback hashes each run.
+   - Keep blocked-workspace verification commands and expected outcomes current.
 
 ## Phase 1: Design Lock
 

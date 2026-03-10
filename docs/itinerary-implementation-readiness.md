@@ -1,6 +1,6 @@
 # Itinerary Implementation Readiness
 
-Last updated: 2026-03-10T01:01:27Z
+Last updated: 2026-03-10T02:01:04Z
 
 This document keeps the itinerary feature implementation-ready while Apps Script source files are unavailable in this workspace.
 
@@ -11,6 +11,12 @@ Detailed stream acceptance matrices live in `docs/itinerary-workstream-matrices.
 1. Schema/setup and migrations
 2. Brief and calendar sync behavior
 3. Validation, tests, docs, and rollback safety
+
+Current assignment while source is blocked:
+
+1. Stream 1 owns migration-order locking and setup idempotency acceptance checks.
+2. Stream 2 owns brief/sync decision tables and traveler-routing policy proofs.
+3. Stream 3 owns blocker verification, rollback checkpoints, and test-command readiness.
 
 ## Stream 1: Schema/Setup + Migrations
 
@@ -89,7 +95,7 @@ Milestone gate:
 
 Current blocker remains active: no `*.gs` or `appsscript.json` source files are present in either:
 
-- `/Users/botcomp/.codex/worktrees/debd/Google CLI`
+- `/Users/botcomp/.codex/worktrees/d3ea/Google CLI`
 - `/Users/botcomp/Projects/Google CLI`
 
 No code-level itinerary implementation can proceed until script source is present in this workspace.

@@ -1,6 +1,6 @@
 # Itinerary Workstream Matrices
 
-Last updated: 2026-03-11T19:36:14Z
+Last updated: 2026-03-11T20:36:33Z
 
 This document keeps the itinerary feature implementation-ready while source files are blocked, with concrete acceptance checks aligned to the three required workstreams.
 
@@ -65,6 +65,6 @@ rg --files | rg '\.gs$|appsscript\.json$'
 cargo --version
 ```
 
-Current result: no Apps Script source files are present in `/Users/botcomp/.codex/worktrees/d0ce/Google CLI`, `/Users/botcomp/.codex/worktrees/048c/Google CLI`, `/Users/botcomp/.codex/worktrees/5e89/Google CLI`, or `/Users/botcomp/Projects/Google CLI`, and both `cargo` and `rustc` are not installed in this environment, so implementation and Rust test execution are both blocked here.
+Current result: no Apps Script source files are present in `/Users/botcomp/.codex/worktrees/6720/Google CLI`, `/Users/botcomp/.codex/worktrees/048c/Google CLI`, `/Users/botcomp/.codex/worktrees/5e89/Google CLI`, or `/Users/botcomp/Projects/Google CLI`, and both `cargo` and `rustc` are not installed in this environment, so implementation and Rust test execution are both blocked here.
 
-Current run branch context: `codex/itinerary-supervisor-20260311-1945` with rollback checkpoint `f0f4e43`.
+Current run branch context: `codex/itinerary-supervisor-20260311-1945-6720` with rollback checkpoint `d0e910b`.

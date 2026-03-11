@@ -1,6 +1,6 @@
 # Itinerary Tab Implementation Plan
 
-## Active Workstreams (2026-03-10 23:02Z Run)
+## Active Workstreams (2026-03-11 00:04Z Run)
 
 1. Schema/setup and migrations
    - Keep the v1 22-column schema locked in `spec.md`.
@@ -23,13 +23,11 @@
 
 Current branch checkpoint chain for rollback-safe continuation:
 
+- `bb81c16` (restored itinerary supervisor artifacts in this workspace)
+- `d4d05a3` (latest inherited supervisor checkpoint from 22:00Z run)
 - `dab945e` (latest inherited supervisor checkpoint from 21:00Z run)
 - `528be03` (latest inherited supervisor checkpoint from 20:00Z run)
-- `f02a44a` (latest inherited supervisor checkpoint from 18:00Z run)
-- `8c3f2f2` (restored itinerary control docs in this workspace)
-- `a2c5eb5` (restored `spec.md` + unblock checklist baseline)
-- `3cfc8e7` (latest inherited supervisor baseline)
-- current branch `codex/itinerary-supervisor-20260310-2200` (branched from `dab945e` because `codex/itinerary-supervisor-20260310-2100` is attached to another worktree)
+- current branch `codex/itinerary-supervisor-20260310-2300` (branched from detached `HEAD` at `5e7d120`)
 
 ## Phase 1: Design Lock
 

@@ -1,6 +1,6 @@
 # Itinerary Tab Implementation Plan
 
-## Active Workstreams (2026-03-11 20:36Z Run)
+## Active Workstreams (2026-03-11 21:36Z Run)
 
 1. Schema/setup and migrations
    - Keep the v1 22-column schema locked in `spec.md`.
@@ -17,6 +17,7 @@
    - Preserve branch hygiene and checkpoint commits with clear rollback hashes each run.
    - Keep blocked-workspace verification commands and expected outcomes current.
    - Re-verify source blocker state every run in this workspace and comparison locations:
+     `/Users/botcomp/.codex/worktrees/f165/Google CLI`,
      `/Users/botcomp/.codex/worktrees/048c/Google CLI`,
      `/Users/botcomp/.codex/worktrees/5e89/Google CLI`,
      and `/Users/botcomp/Projects/Google CLI`.
@@ -33,7 +34,8 @@ Current branch checkpoint chain for rollback-safe continuation:
 - `528be03` (latest inherited supervisor checkpoint from 20:00Z run)
 - `e9405e6` (latest inherited supervisor checkpoint from 16:35Z run)
 - `881443e` (latest inherited supervisor checkpoint from 17:35Z run)
-- current branch `codex/itinerary-supervisor-20260311-1945-6720` (branched from rollback-safe checkpoint `d0e910b`)
+- `b309277` (latest inherited supervisor checkpoint from 20:36Z run)
+- current branch `codex/itinerary-supervisor-20260311-2130` (branched from rollback-safe checkpoint `b309277`)
 
 ## Phase 1: Design Lock
 

@@ -1,6 +1,6 @@
 # Itinerary Source-Unblock Handoff
 
-Last updated: 2026-03-11T20:36:33Z
+Last updated: 2026-03-11T21:36:36Z
 
 This checklist is the execution handoff for the first run where Apps Script source files (`*.gs`, `appsscript.json`) become available.
 

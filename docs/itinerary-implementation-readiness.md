@@ -1,6 +1,6 @@
 # Itinerary Implementation Readiness
 
-Last updated: 2026-03-13T01:51:04Z
+Last updated: 2026-03-13T02:50:48Z
 
 This document keeps the itinerary feature implementation-ready while Apps Script source files are unavailable in this workspace.
 
@@ -95,6 +95,7 @@ Milestone gate:
 
 Current blocker remains active: no `*.gs` or `appsscript.json` source files are present in:
 
+- `/Users/botcomp/.codex/worktrees/03eb/Google CLI`
 - `/Users/botcomp/.codex/worktrees/82f6/Google CLI`
 - `/Users/botcomp/.codex/worktrees/8472/Google CLI`
 - `/Users/botcomp/.codex/worktrees/22ab/Google CLI`
@@ -106,4 +107,4 @@ Current blocker remains active: no `*.gs` or `appsscript.json` source files are 
 
 No code-level itinerary implementation can proceed until script source is present in this workspace.
 
-Current execution branch: `codex/itinerary-supervisor-20260313-0058` (created from checkpoint `5e4c058` to preserve rollback-safe continuity for this run).
+Current execution branch: `codex/itinerary-supervisor-20260313-0255` (created from checkpoint `8846902` to preserve rollback-safe continuity for this run).
